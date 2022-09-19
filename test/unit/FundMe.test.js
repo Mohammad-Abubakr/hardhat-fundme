@@ -93,6 +93,7 @@ const { developmentChains } = require("../../helper-hardhat-config")
           console.log(`GasCost: ${withdrawGasCost}`)
           console.log(`GasUsed: ${gasUsed}`)
           console.log(`GasPrice: ${effectiveGasPrice}`)
+          console.log(`Address: ${fundMe.address}`)
           const endingFundMeBalance = await fundMe.provider.getBalance(
             fundMe.address
           )
